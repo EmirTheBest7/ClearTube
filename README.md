@@ -23,4 +23,8 @@ A lightweight and efficient browser extension that blocks ads on YouTube, provid
 **Voila** !! That's it.>!! now stream your favourite videos without cursing the ads.
 
 ## Issues
-* CleanTube v1.0.1 [BETA] : Debug Process continues...
+*  Debug Process continues...
+* **CleanTube v1.0.1 [BETA] :** 
+	* Added UI Interface
+    * Updated AdBlock Script & Optimized alghoritm
+    * [Icons, Tests, Debug] & first distribution file published soon - In Progress...
