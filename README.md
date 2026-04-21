@@ -10,6 +10,12 @@ A lightweight and efficient browser extension that blocks ads on YouTube, provid
 ## Usage
 ![Interface](_img/UI101.png)
 
+### 📥 Download Versions
+
+| Version | Release Date | Download | Highlights | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **v1.0.1** | Apr 21, 2026 | [📦 CleanTube_1.0.1.zip](dist/CleanTube_1.0.1.zip) | Test | 🟢 BETA |
+
 ## Load the Extension
 * Open Chrome and go to chrome://extensions/
 * Enable “Developer mode” by toggling the switch.
