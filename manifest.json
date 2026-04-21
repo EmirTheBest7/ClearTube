@@ -3,10 +3,15 @@
   "name": "CleanTube v1.0.1 [BETA]",
   "version": "1.0",
   "description": "Simple YouTube AdBlock",
-
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "storage"],
   "host_permissions": ["*://*.youtube.com/*"],
-
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
   "action": {
     "default_title": "CleanTube v1.0.1 [BETA]",
     "default_popup": "popup.html"
