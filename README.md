@@ -9,12 +9,18 @@ A lightweight and efficient browser extension that blocks ads on YouTube, provid
 * Enable “Developer mode” by toggling the switch.
 * Click on “Load unpacked” and select the directory containing ClearTube extension zip file.
 
-* 
-
+* **Open your Javascript console.** To do this, 
+	* For Chrome Users :
+		* Chrome : Press Option+Command+J
+		* Safari : Press Option+Command+C
+		* Firefox : Press Option+Command+K
+	* For Firefox Users :
+		* Chrome : Press Ctrl+Shift+J
+		* Firefox : Press Ctrl+Shift+K
 
 **Note: Do not restart the browser and then open the youtube page. Simply close the Console window.** 
 
 **Voila** !! That's it.>!! now stream your favourite videos without cursing the ads.
 
 ## Issues
-* Debug Process continues...
+* CleanTube v1.0.1 [BETA] : Debug Process continues...
