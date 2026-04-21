@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CleanTube v1.0.1 [BETA]</title>
+
+<style>
+:root {
+  --bg: #0b0f14;
+  --card: #11161d;
+  --border: #1f2937;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #ff0033;
+  --accent-soft: rgba(255, 0, 51, 0.15);
+  --green: #22c55e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Container */
+.wrapper {
+  padding: 16px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.logo {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.status-pill {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  transition: 0.25s;
+}
+
+/* Main Card */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+/* Toggle row */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Toggle */
+.switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #1f2937;
+  border-radius: 999px;
+  transition: 0.25s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 3px;
+  left: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+
+input:checked + .slider {
+  background: var(--accent);
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 16px 0;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  text-align: left;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Actions */
+.actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  flex: 1;
+  padding: 9px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1a212b;
+}
+
+/* Primary button */
+.primary {
+  background: var(--accent);
+  border: none;
+  color: white;
+}
+
+.primary:hover {
+  background: #e6002d;
+}
+
+/* Footer */
+.footer {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 10px;
+  color: var(--muted);
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+  <div class="header">
+    <div class="logo">CleanTube v1.0.1 [BETA]</div>
+    <div class="status-pill" id="statusPill">Active</div>
+  </div>
+
+  <div class="card">
+
+    <div class="row">
+      <div class="label">Ad Blocking</div>
+
+      <label class="switch">
+        <input type="checkbox" id="toggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value" id="ads">342</div>
+        <div class="stat-label">Ads blocked</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-value" id="time">12m</div>
+        <div class="stat-label">Time saved</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="primary">Pause on YouTube</button>
+      <button id="refreshBtn">Refresh</button>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    v1.0.1 • Lightweight • Open Source
+  </div>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>

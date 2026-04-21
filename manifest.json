@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "CleanTube v1.0.1 [BETA]",
+  "version": "1.0",
+  "description": "Simple YouTube AdBlock",
+
+  "permissions": ["tabs"],
+  "host_permissions": ["*://*.youtube.com/*"],
+
+  "action": {
+    "default_title": "CleanTube v1.0.1 [BETA]",
+    "default_popup": "popup.html"
+  }
+}
