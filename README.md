@@ -1,5 +1,5 @@
 <div align="center">
-	<h1>ClearTube</h1>
+	<h1>CleanTube</h1>
 	<img src="_img/banner.png"><br>
 </div>
 
@@ -13,7 +13,7 @@ A lightweight and efficient browser extension that blocks ads on YouTube, provid
 ## Load the Extension
 * Open Chrome and go to chrome://extensions/
 * Enable “Developer mode” by toggling the switch.
-* Click on “Load unpacked” and select the directory containing ClearTube extension zip file.
+* Click on “Load unpacked” and select the directory containing CleanTube extension zip file.
 
 * **Open your Javascript console.** To do this, 
 	* For Chrome Users :
