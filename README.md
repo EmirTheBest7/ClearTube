@@ -4,6 +4,14 @@
 </div>
 
 ## 
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.3-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/Platform-Chrome%20%7C%20Edge-success.svg" alt="Platform">
+  <img src="https://img.shields.io/badge/Setup-Plug%20%26%20Play-brightgreen.svg" alt="Setup">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
+</p>
+
 A lightweight and efficient browser extension that blocks ads on YouTube, providing a clean and uninterrupted viewing experience. Built with performance and simplicity in mind, it removes video ads, banners, and pop-ups without slowing down playback.
 
 
